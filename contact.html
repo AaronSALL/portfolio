@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio BTS SIO SLAM de Aaron SALL">
+    <title>Portfolio | Aaron SALL</title>
+    
+    <!-- Icône -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome (icônes) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Fichier CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Bouton Retour en Haut -->
+    <button id="scrollTop" class="scroll-top"><i class="fas fa-arrow-up"></i></button>
+    
+    <header>
+        <div class="container">
+            <div class="profile">
+                <img src="profil/photodeprofil.jpg" alt="Photo de Aaron SALL">
+                <h1>Aaron SALL</h1>
+                <div class="social-links">
+                    <a href="#" target="_blank"><i class="fab fa-google"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Accueil</a></li>
+                    <li><a href="àproposdemoi.html"><i class="fas fa-user"></i> À Propos</a></li>
+                    <li><a href="parcours.html"><i class="fas fa-graduation-cap"></i> Mon Parcours</a></li>
+                    <li><a href="projets.html"><i class="fas fa-folder-open"></i> Mes Projets</a></li>
+                    <li><a href="veilles.html"><i class="fas fa-rss"></i> Veille Technologique</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <header>
+      <h1>Contactez-moi</h1>
+  </header>
+
+  <main>
+      <section>
+          <h2>Mes Coordonnées</h2>
+          <p><strong>Adresse :</strong> 6 Allée du Couserans, 31770 Colomiers, France</p>
+          <p><strong>Email :</strong> <a href="mailto:aaronbabacarsall@gmail.com">aaronbabacarsall@gmail.com</a></p>
+          <p><strong>Téléphone :</strong> <a href="tel:+33762057445">07 62 05 74 45</a></p>
+      </section>
+
+      <section>
+          <h2>Envoyez-moi un message</h2>
+          <form action="envoyer.php" method="post">
+              
+              <label for="nom">Nom :</label>
+              <input type="text" id="nom" name="nom" required placeholder="Votre nom">
+
+              <label for="prenom">Prénom :</label>
+              <input type="text" id="prenom" name="prenom" required placeholder="Votre prénom">
+
+              <label for="email">Email :</label>
+              <input type="email" id="email" name="email" required placeholder="Votre email">
+
+              <label for="telephone">Téléphone :</label>
+              <input type="tel" id="telephone" name="telephone" placeholder="Votre numéro de téléphone">
+
+              <label for="sujet">Sujet :</label>
+              <input type="text" id="sujet" name="sujet" required placeholder="Sujet du message">
+
+              <label for="message">Message :</label>
+              <textarea id="message" name="message" rows="5" required placeholder="Votre message"></textarea>
+
+              <button type="submit">Envoyer</button>
+
+          </form>
+      </section>
+  </main>
+
+<!-- ??? !!!! ===== Tous Droits Réservés ===== !!!! ??? -->
+<footer>
+  <p>© 2025 Aaron SALL - Tous Droits Réservés</p>
+</footer>
+
+<!-- Fichier JavaScript -->
+<script src="js/script.js"></script>
+</body>
+</html>

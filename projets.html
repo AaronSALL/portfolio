@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio BTS SIO SLAM de Aaron SALL">
+    <title>Mes Projets | Aaron SALL</title>
+    
+    <!-- Icône -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome (icônes) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Fichier CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Bouton Retour en Haut -->
+    <button id="scrollTop" class="scroll-top"><i class="fas fa-arrow-up"></i></button>
+    
+    <header>
+        <div class="container">
+            <div class="profile">
+                <img src="profil/photodeprofil.jpg" alt="Photo de Aaron SALL">
+                <h1>Aaron SALL</h1>
+                <div class="social-links">
+                    <a href="#" target="_blank"><i class="fab fa-google"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Accueil</a></li>
+                    <li><a href="àproposdemoi.html"><i class="fas fa-user"></i> À Propos</a></li>
+                    <li><a href="parcours.html"><i class="fas fa-graduation-cap"></i> Mon Parcours</a></li>
+                    <li><a href="projets.html"><i class="fas fa-folder-open"></i> Mes Projets</a></li>
+                    <li><a href="veilles.html"><i class="fas fa-rss"></i> Veille Technologique</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+<!-- ======= Section Mes Projets ======= -->
+<section id="mes-projets" class="projets-section">
+  <div class="container">
+      <div class="section-title">
+          <h2>📂 Mes Projets</h2>
+      </div>
+
+      <!-- Filtres des projets -->
+      <div class="filter-container">
+          <button class="filter-btn active" data-filter="all">Tout</button>
+          <button class="filter-btn" data-filter="1ere-annee">1ère Année</button>
+          <button class="filter-btn" data-filter="2eme-annee">2ème Année</button>
+          <button class="filter-btn" data-filter="redoublement">Redoublement</button>
+      </div>
+
+      <!-- Conteneur des projets -->
+      <div class="projets-container">
+
+          <!-- Projet MOBILA -->
+          <div class="projet-card" data-category="1ere-annee">
+              <h4>PPE 1 - Développement Mobile MOBILA</h4>
+              <p class="date"><i class="far fa-calendar-alt"></i> Novembre 2022</p>
+              <img src="projets/SALL Aaron Projet MOBILA.pdf" alt="Projet MOBILA">
+              <a href="projets/SALL Aaron Projet MOBILA.pdf" class="btn-projet">Voir le projet</a>
+              <p class="langages"><b>Langages :</b> Kotlin, Firebase</p>
+          </div>
+
+          <!-- Projet CanardSound -->
+          <div class="projet-card" data-category="1ere-annee">
+              <h4>PP2 - Auch Deegers CanardSound</h4>
+              <p class="date"><i class="far fa-calendar-alt"></i> Mars 2023</p>
+              <img src="projets/SALL Aaron Projet CanardSound.pdf" alt="Projet CanardSound">
+              <a href="projets/SALL Aaron Projet CanardSound.pdf" class="btn-projet">Voir le projet</a>
+              <p class="langages"><b>Langages :</b> HTML, CSS, JavaScript, PHP</p>
+          </div>
+
+          <!-- Projet AMSET -->
+          <div class="projet-card" data-category="2eme-annee">
+              <h4>PPE3 - Gestion Salariés PME AMSET</h4>
+              <p class="date"><i class="far fa-calendar-alt"></i> Septembre 2023</p>
+              <img src="projets/SALL Aaron Projet AMSET.pdf" alt="Projet AMSET">
+              <a href="projets/SALL Aaron Projet AMSET.pdf" class="btn-projet">Voir le projet</a>
+              <p class="langages"><b>Langages :</b> Java, MySQL</p>
+          </div>
+
+          <!-- Projet InventQR -->
+          <div class="projet-card" data-category="redoublement">
+              <h4>PPE4 - Application d'Inventaire InventQR</h4>
+              <p class="date"><i class="far fa-calendar-alt"></i> Septembre 2024</p>
+              <img src="projets/SALL Aaron Projet InventQR.pdf" alt="Projet InventQR">
+              <a href="projets/SALL Aaron Projet InventQR.pdf" class="btn-projet">Voir le projet</a>
+              <p class="langages"><b>Langages :</b> React Native, Node.js, MongoDB</p>
+          </div>
+
+      </div>
+  </div>
+</section>
+    </main>
+
+    <footer>
+      <p>© 2025 Aaron SALL - Tous Droits Réservés</p>
+  </footer>
+
+<!-- CSS Modernisé -->
+<style>
+  .projets-section {
+      padding: 50px 0;
+      background-color: #f9f9f9;
+      text-align: center;
+  }
+  .section-title h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+  }
+  .filter-container {
+      margin-bottom: 30px;
+  }
+  .filter-btn {
+      padding: 10px 15px;
+      margin: 5px;
+      border: none;
+      background: #007BFF;
+      color: white;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: 0.3s;
+  }
+  .filter-btn:hover, .filter-btn.active {
+      background: #0056b3;
+  }
+  .projets-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+  }
+  .projet-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 300px;
+      text-align: center;
+      transition: transform 0.3s;
+  }
+  .projet-card:hover {
+      transform: translateY(-5px);
+  }
+  .projet-card img {
+      width: 100%;
+      border-radius: 5px;
+      margin-bottom: 10px;
+  }
+  .btn-projet {
+      display: inline-block;
+      padding: 10px;
+      background: #28a745;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: 0.3s;
+  }
+  .btn-projet:hover {
+      background: #218838;
+  }
+  .langages {
+      font-size: 14px;
+      color: #555;
+      margin-top: 10px;
+  }
+</style>
+
+<!-- JavaScript pour les filtres -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+      const filterButtons = document.querySelectorAll(".filter-btn");
+      const projectCards = document.querySelectorAll(".projet-card");
+
+      filterButtons.forEach(button => {
+          button.addEventListener("click", function () {
+              const filter = this.getAttribute("data-filter");
+
+              // Désactiver tous les boutons
+              filterButtons.forEach(btn => btn.classList.remove("active"));
+              this.classList.add("active");
+
+              // Filtrer les projets
+              projectCards.forEach(card => {
+                  if (filter === "all" || card.getAttribute("data-category") === filter) {
+                      card.style.display = "block";
+                  } else {
+                      card.style.display = "none";
+                  }
+              });
+          });
+      });
+  });
+</script>
+
+  <!-- Fichier JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>
